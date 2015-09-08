@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  username: postgres
+  password: postgres
+  encoding: unicode
+  host: localhost
+  pool: 5
+
+development:
+  <<: *default
+  database: sms_development
+
+test:
+  <<: *default
+  database: sms_test
+
+production:
+  <<: *default
+  database: sms_production

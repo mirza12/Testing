@@ -1,0 +1,4 @@
+rake db:setup
+rake db:migrate
+job
+Finally,
